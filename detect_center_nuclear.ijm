@@ -44,6 +44,7 @@ for (i = 1; i < N+1; i++) {
 	run("Duplicate...",j);
   }
   run("Images to Stack", "name=mask title=[] use");
+  setMinAndMax(0, 1);
   saveAs("Tiff", m_saveDir+"mask"+i+".tif");
   run("Close All");
   

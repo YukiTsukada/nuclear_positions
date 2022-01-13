@@ -3,7 +3,7 @@ showMessage("Select Open Folder");
 openDir = getDirectory("Choose a Directory");
 
 list = getFileList(openDir);
-f = File.open(openDir+"coordinates.txt");
+f = File.open(openDir+"coordinates.csv");
 
 for (j = 0; j < list.length; j++) {
 	open(openDir+list[j]);
